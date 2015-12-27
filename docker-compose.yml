@@ -1,0 +1,18 @@
+mysql-vol:
+  build: mysql-vol
+
+mysql:
+  build: mysql
+  ports:
+    - "3306:3306"
+  volumes_from:
+    - "mysql-vol"
+
+front-ui:
+  build: front-ui
+  ports:
+    - "8001:8001"
+  links:
+    - "mysql:mysql"
+  volumes:
+    - "src:/src"
