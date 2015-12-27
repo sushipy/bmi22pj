@@ -60,17 +60,20 @@ $ docker-compose build
 $ docker-compose up -d
 ```
 
-4. 上記2.にアプリソースコードのみを変更したい場合は、下記手順を実施
+
+## 番外編
+- アプリソースコードのみを変更したい場合は、下記手順を実施
 
 ```
 $ docker-compose stop front-ui ; docker-compose rm -v front-ui
 
 - ソースコード変更
 
+$ docker-compose build front-ui
 $ docker-compose up -d front-ui
 ```
 
-5. DB構造の変更も合わせて実施する場合
+- アプリ変更＋DB構造変更を合わせて実施する場合
 
 ```
 $ docker-compose stop ; docker-compose rm -v
