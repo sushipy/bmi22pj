@@ -20,7 +20,7 @@
 
 ## 使い方
 
-1. docker-composeファイルダウンロード
+- docker-composeファイルダウンロード
 
 ```
 $ git clone https://github.com/sushipy/bmi22pj.git
@@ -39,7 +39,7 @@ bmi22pj
 
 ```
 
-2. ソースコードをダウンロード(backend.gitがアプリケーションの場合)
+- ソースコードをダウンロード(backend.gitがアプリケーションの場合)
 
 ```
 $ git clone https://github.com/sushipy/backend.git ./src
@@ -47,13 +47,13 @@ $ chmod +x backend/*.sh
 ```
 
 
-3. docker image のビルド
+- docker image のビルド
 
 ```
 $ docker-compose build
 ```
 
-4. docker 起動
+- docker 起動
 
 ```
 $ docker-compose up -d
