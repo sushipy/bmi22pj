@@ -43,7 +43,7 @@ bmi22pj
 
 ```
 $ git clone https://github.com/sushipy/backend.git ./src
-$ chmod +x backend/*.sh
+$ chmod +x src/*.sh
 ```
 
 

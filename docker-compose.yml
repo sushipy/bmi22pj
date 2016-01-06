@@ -15,4 +15,4 @@ front-ui:
   links:
     - "mysql:mysql"
   volumes:
-    - "./backend:/src"
+    - "./src:/src"
