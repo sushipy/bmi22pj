@@ -42,19 +42,18 @@ bmi22pj
 2. ソースコードをダウンロード(backend.gitがアプリケーションの場合)
 
 ```
-$ cd front-ui
 $ git clone https://github.com/sushipy/backend.git ./src
+$ chmod +x backend/*.sh
 ```
 
 
-2. docker image のビルド
+3. docker image のビルド
 
 ```
-$ cd ../
 $ docker-compose build
 ```
 
-3. docker 起動
+4. docker 起動
 
 ```
 $ docker-compose up -d
@@ -67,9 +66,8 @@ $ docker-compose up -d
 ```
 $ docker-compose stop front-ui ; docker-compose rm -v front-ui
 
-- ソースコード変更
+* ソースコード変更
 
-$ docker-compose build front-ui
 $ docker-compose up -d front-ui
 ```
 

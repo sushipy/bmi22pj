@@ -28,7 +28,6 @@ RUN apt-get update && apt-get install -y\
 
 EXPOSE 8001
 
-ADD src /src
-RUN chmod +x /src/entrypoint.sh
+VOLUME /src
 
 CMD ["/src/entrypoint.sh"]

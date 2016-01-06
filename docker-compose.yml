@@ -11,8 +11,8 @@ mysql:
 front-ui:
   build: front-ui
   ports:
-    - "8001:8001"
+    - "3389:3389"
   links:
     - "mysql:mysql"
   volumes:
-    - "src:/src"
+    - "./backend:/src"
